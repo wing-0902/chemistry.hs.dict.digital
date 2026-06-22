@@ -1,4 +1,4 @@
-# [物理　用語辞書](https://physics.hs.dict.digital)
+# [化学　用語辞書](https://chemistry.hs.dict.digital)
 
 ## ディレクトリ構造
 
