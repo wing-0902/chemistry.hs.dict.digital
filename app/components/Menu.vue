@@ -45,8 +45,8 @@ const handleShare = () => {
   if (navigator.share) {
     navigator
       .share({
-        title: '地理探求 - Dictionary_digital',
-        url: 'https://geography.hs.dict.digital'
+        title: '化学 - dict.digital',
+        url: 'https://chemistry.hs.dict.digital'
       })
       .catch((error) => {
         console.error('共有に失敗:', error);
@@ -59,7 +59,7 @@ const handleShare = () => {
 
 // メニュー項目の操作処理
 const copyUrlScheme = () => {
-  const urlScheme = 'https://geography.hs.dict.digital/content/[slug]';
+  const urlScheme = 'https://chemistry.hs.dict.digital/content/[slug]';
   navigator.clipboard.writeText(urlScheme).then(
     () => {},
     (err) => {
@@ -111,7 +111,7 @@ const copyUrlScheme = () => {
           </li>
           <li>
             <NuxtLink
-              to="https://github.com/wing-0902/hs-geography"
+              to="https://github.com/wing-0902/chemistry.hs.dict.digital"
               target="_blank"
             >
               <span i-hugeicons-github-01></span>
