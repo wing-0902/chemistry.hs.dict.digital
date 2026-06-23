@@ -13,7 +13,7 @@ const { data: post } = await useAsyncData(`dict-${slugPath}`, () => {
 });
 
 useSeoMeta({
-  title: post.value?.title + ' - 地理探求'
+  title: post.value?.title + ' - 化学 - dict.digital'
 });
 
 definePageMeta({
@@ -44,7 +44,7 @@ route.meta.menuTitle = post.value?.title || 'Dictionary';
       <NuxtLink
         :href="
           joinURL(
-            'https://raw.githubusercontent.com/wing-0902/hs-geography/refs/heads/main/content/',
+            'https://raw.githubusercontent.com/wing-0902/chemistry.hs.dict.digital/refs/heads/main/content/',
             post.path,
             'index.md'
           )
@@ -57,7 +57,7 @@ route.meta.menuTitle = post.value?.title || 'Dictionary';
       <NuxtLink
         :to="
           joinURL(
-            'https://github.com/wing-0902/hs-geography/edit/main/content',
+            'https://github.com/wing-0902/chemistry.hs.dict.digital/edit/main/content',
             post.path,
             'index.md'
           )
